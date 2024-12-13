@@ -15,7 +15,6 @@ import {
 import mainLogo from "@/assets/mystique-main.png";
 import Image from "next/image";
 
-// Define navigation items as a constant
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
