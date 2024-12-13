@@ -21,27 +21,30 @@ export function FooterSection() {
     <Footer container>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div>
-            <FooterBrand
-              href="https://flowbite.com"
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              name="Flowbite"
-            />
+          <div className="flex flex-col items-center font-funnel-display">
+            <span className="font-medium text-gray-700 whitespace-nowrap text-lg dark:text-white">
+              Mystique Ville
+            </span>
+            <span className="border-t text-gray-700 dark:text-white border-gray-200 text-[10px]">
+              PRESTINE JUNGLE EXPERIENCE
+            </span>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <FooterTitle title="about" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Flowbite</FooterLink>
-                <FooterLink href="#">Tailwind CSS</FooterLink>
+                <FooterLink href="/about">About Us</FooterLink>
+                <FooterLink href="#">Restaurants</FooterLink>
+                <FooterLink href="#">Trekking</FooterLink>
+                <FooterLink href="#">Reservation</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
               <FooterTitle title="Follow us" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Github</FooterLink>
-                <FooterLink href="#">Discord</FooterLink>
+                <FooterLink href="#">Instagram</FooterLink>
+                <FooterLink href="#">Facebook</FooterLink>
+                <FooterLink href="#">Youtube</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
@@ -55,13 +58,11 @@ export function FooterSection() {
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <FooterCopyright href="#" by="Flowbite™" year={2022} />
+          <FooterCopyright href="#" by="Mystique Ville" year={2025} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <FooterIcon href="#" icon={BsFacebook} />
             <FooterIcon href="#" icon={BsInstagram} />
             <FooterIcon href="#" icon={BsTwitter} />
-            <FooterIcon href="#" icon={BsGithub} />
-            <FooterIcon href="#" icon={BsDribbble} />
           </div>
         </div>
       </div>

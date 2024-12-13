@@ -4,7 +4,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
-      <div className="grid h-screen max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div className="grid h-[calc(100vh-10vh)] max-w-screen-xl px-4 mx-auto xl:gap-0 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <a
             href="#"
@@ -17,7 +17,7 @@ const HeroSection = () => {
               Book Your Retreat at Kluney Manor Now!
             </span>
           </a>
-          <h1 className="font-funnel-display max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          <h1 className="font-funnel-display max-w-2xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             Discover Tranquility
           </h1>
           <p className="font-funnel-sans max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
@@ -27,7 +27,7 @@ const HeroSection = () => {
           </p>
           <Button className="inline-flex mr-2">Book Now</Button>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:block">
           <Carousel slideInterval={5000}>
             <img
               src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
